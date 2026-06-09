@@ -1,0 +1,29 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFAF9"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+    <linearGradient id="growth-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="50%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#bg-gradient)"/>
+  <path d="M50,150 Q100,50 150,150 T250,50 T350,150" stroke="url(#growth-gradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="50" cy="150" r="6" fill="#0D9488"/>
+  <circle cx="100" cy="50" r="6" fill="#F97316"/>
+  <circle cx="150" cy="150" r="6" fill="#0D9488"/>
+  <circle cx="200" cy="50" r="6" fill="#F97316"/>
+  <circle cx="250" cy="150" r="6" fill="#0D9488"/>
+  <circle cx="300" cy="50" r="6" fill="#F97316"/>
+  <circle cx="350" cy="150" r="6" fill="#34D399"/>
+  <g opacity="0.1">
+    <line x1="0" y1="0" x2="400" y2="0" stroke="#1F2937" stroke-width="1"/>
+    <line x1="0" y1="50" x2="400" y2="50" stroke="#1F2937" stroke-width="1"/>
+    <line x1="0" y1="100" x2="400" y2="100" stroke="#1F2937" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#1F2937" stroke-width="1"/>
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#1F2937" stroke-width="1"/>
+  </g>
+</svg>

@@ -12,18 +12,37 @@
   <meta property="og:description" content="Helping brands grow through ethical affiliate marketing and authentic content creation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carladenning17-debug.github.io/carladenning17-debug-intent-collective/">
-  <meta property="og:image" content="https://carladenning17-debug.github.io/carladenning17-debug-intent-collective/og-image.png">
+  <meta property="og:image" content="og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Intent Collective — Authentic Digital Marketing">
   <meta name="twitter:description" content="Helping brands grow through ethical affiliate marketing and authentic content creation.">
+  <link rel="icon" type="image/svg+xml" href="images/svg/logo-connection-network.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --color-primary-teal: #0D9488;
+      --color-primary-coral: #F97316;
+      --color-primary-offwhite: #FAFAF9;
+      --color-secondary-slate: #475569;
+      --color-secondary-gold: #F59E0B;
+      --color-secondary-charcoal: #1F2937;
+      --color-accent-mint: #34D399;
+      --color-accent-blush: #F472B6;
+      --color-background: var(--color-primary-offwhite);
+      --color-text: var(--color-secondary-charcoal);
+      --color-text-light: #6B7280;
+      --color-border: #E5E7EB;
+    }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.7; background: #fafafa; }
     .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+
+    img { max-width: 100%; height: auto; }
+    .rounded-img { border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    .hero-image-wrap { max-width: 480px; margin: 0 auto; }
 
     /* Header */
     header { background: rgba(26, 26, 46, 0.97); backdrop-filter: blur(8px); color: #fff; padding: 18px 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.06); }
@@ -35,13 +54,13 @@
     nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
 
     /* Hero */
-    .hero { background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); color: #fff; padding: 140px 0 120px; text-align: center; position: relative; overflow: hidden; }
+    .hero { background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); color: #fff; padding: 140px 0 120px; text-align: left; position: relative; overflow: hidden; }
     .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 20%, rgba(233,69,96,0.08) 0%, transparent 60%), radial-gradient(ellipse at 30% 80%, rgba(15,52,96,0.3) 0%, transparent 50%); pointer-events: none; }
-    .hero .container { position: relative; }
+    .hero .container { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
     .hero-badge { display: inline-block; background: rgba(233,69,96,0.15); color: #e94560; padding: 6px 18px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.3px; text-transform: uppercase; margin-bottom: 24px; border: 1px solid rgba(233,69,96,0.2); }
-    .hero h2 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; letter-spacing: -1.5px; line-height: 1.15; max-width: 780px; margin-left: auto; margin-right: auto; }
+    .hero h2 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; letter-spacing: -1.5px; line-height: 1.15; max-width: 780px; }
     .hero h2 span { color: #e94560; background: linear-gradient(135deg, #e94560, #ff6b6b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.6); max-width: 580px; margin: 0 auto 36px; line-height: 1.7; }
+    .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.6); max-width: 580px; margin: 0 0 36px; line-height: 1.7; }
 
     /* Buttons */
     .btn { display: inline-flex; align-items: center; gap: 8px; background: #e94560; color: #fff; padding: 16px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.25s; border: none; cursor: pointer; }
@@ -103,10 +122,13 @@
       header .container { flex-direction: column; gap: 12px; }
       nav { flex-wrap: wrap; justify-content: center; }
       nav a { padding: 6px 12px; font-size: 0.8rem; }
-      .hero { padding: 100px 0 80px; }
-      .hero h2 { font-size: 2.2rem; }
+      .hero { padding: 100px 0 80px; text-align: center; }
+      .hero .container { grid-template-columns: 1fr; text-align: center; }
+      .hero h2 { font-size: 2.2rem; text-align: center; }
+      .hero p { margin: 0 auto 36px; }
       section { padding: 64px 0; }
       section h2 { font-size: 1.75rem; }
+      .hero-image-wrap { order: -1; }
     }
   </style>
   <script type="application/ld+json">
@@ -116,7 +138,7 @@
     "name": "Intent Collective",
     "description": "Authentic digital marketing studio specializing in ethical affiliate marketing, content creation, and sustainable growth strategies.",
     "url": "https://carladenning17-debug.github.io/carladenning17-debug-intent-collective/",
-    "logo": "https://carladenning17-debug.github.io/carladenning17-debug-intent-collective/logo.png",
+    "logo": "logo.png",
     "founder": {
       "@type": "Person",
       "name": "Carla"
@@ -159,10 +181,15 @@
 
   <section id="home" class="hero">
     <div class="container">
-      <span class="hero-badge">Authentic Digital Marketing</span>
-      <h2>Connecting people with <span>valuable solutions</span></h2>
-      <p>We help brands grow, audiences make informed decisions, and creators build sustainable income through marketing that puts people first.</p>
-      <a href="#contact" class="btn">Get in touch</a>
+      <div>
+        <span class="hero-badge">Authentic Digital Marketing</span>
+        <h2>Connecting people with <span>valuable solutions</span></h2>
+        <p>We help brands grow, audiences make informed decisions, and creators build sustainable income through marketing that puts people first.</p>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="images/branding/carla-hero-16x9.webp" alt="Carla, Founder of Intent Collective" class="rounded-img" loading="eager">
+      </div>
     </div>
   </section>
 
@@ -172,7 +199,7 @@
       <p class="section-sub">What we do to help you grow — ethically, strategically, sustainably.</p>
       <div class="grid">
         <div class="card">
-          <div class="icon-wrap">🔗</div>
+          <img src="images/concepts/growth-concept-4x3.webp" alt="Digital growth concept" style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:16px;" loading="lazy">
           <h3>Affiliate Marketing</h3>
           <p>Strategic partnerships that connect audiences with products they genuinely love. We identify the right partners, negotiate authentic placements, and optimize for long-term trust — not just clicks.</p>
           <div class="card-links">
@@ -184,7 +211,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="icon-wrap">✍️</div>
+          <img src="images/concepts/authentic-marketing-3x4.webp" alt="Transparent marketing approach" style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:16px;" loading="lazy">
           <h3>Content Creation</h3>
           <p>Authentic content that tells your brand's story — from blog posts and video scripts to social campaigns that build real, lasting trust.</p>
           <div class="card-links">
@@ -196,7 +223,7 @@
           </div>
         </div>
         <div class="card">
-          <div class="icon-wrap">📈</div>
+          <img src="images/concepts/collaborative-team-16x9.webp" alt="Collaborative team strategy" style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:16px;" loading="lazy">
           <h3>Digital Growth</h3>
           <p>Data-driven strategies to expand your reach. SEO, paid media, email marketing, and community building — done the sustainable way.</p>
           <div class="card-links">
@@ -266,6 +293,7 @@
       <h2>About</h2>
       <p class="section-sub">The story behind Intent Collective.</p>
       <div class="about-wrap">
+        <img src="images/branding/connection-network-abstract-1x1.webp" alt="Digital connections network representing Intent Collective's approach" class="rounded-img" style="max-width: 280px; margin: 0 auto 32px; display: block;" loading="lazy">
         <p>Intent Collective was founded on a simple belief: successful marketing starts with understanding people. We connect them with solutions that genuinely add value to their lives — through ethical affiliate marketing, intentional content, and smart digital strategy. Every campaign we run is built on authenticity, transparency, and respect for the audience. That's not just our approach. It's our promise.</p>
         <p class="sig">— <span>Carla</span>, Founder &amp; CEO</p>
       </div>
