@@ -19,17 +19,167 @@
 - [x] Internal anchor links for navigation
 - [x] External links to relevant tools/platforms
 
-## Next Steps (AWAITING NICHE DETAILS)
+## Phase 1: Niche-Specific Keyword Research (✅ RECEIVED)
 
-### Phase 1: Niche-Specific Keyword Research
-**Status**: Blocked - Need niche/product details
+### Niche Analysis & Target Customers:
 
-**Required Information**:
-1. **Specific niches/products**: What are you selling?
-2. **Target customer**: Who buys these products?
-3. **Affiliate partnerships**: Which programs are you in?
+**1. Money Making (Writelytic.com - AI Writing/Affiliate Tool)**
+- **Target Customer**: Content creators, affiliate marketers, bloggers, small business owners
+- **Search Intent**: People looking to make money online through content creation
+- **Affiliate Program**: Writelytic affiliate program
 
-**Example Niches & Keyword Targets**:
+**2. Health & Fitness (Keraessentials - Hair/Nail Supplement)**
+- **Target Customer**: Women 30-65 concerned with hair/nail health, anti-aging
+- **Search Intent**: Solutions for hair loss, brittle nails, natural supplements
+- **Affiliate Program**: Keraessentials affiliate program
+
+**3. Dating (Bottom Line Manifesting - Law of Attraction)**
+- **Target Customer**: Singles seeking relationships, self-improvement enthusiasts
+- **Search Intent**: Manifesting love, attracting partners, dating strategies
+- **Affiliate Program**: Bottom Line Manifesting affiliate program
+
+**4. Spirituality (Billionaire Brainwave - Wealth Manifestation)**
+- **Target Customer**: Spiritual seekers, personal development audience, wealth mindset
+- **Search Intent**: Manifestation techniques, law of attraction, wealth mindset
+- **Affiliate Program**: Billionaire Brainwave affiliate program
+
+### Niche-Specific Keyword Targets:
+
+**Money Making/AI Content Tools** (Commercial Investigation):
+- "best AI writing tools for affiliate marketing"
+- "Writelytic review 2026"
+- "AI content generator for making money online"
+- "affiliate marketing software tools"
+- "make money with AI writing"
+
+**Health & Fitness/Supplements** (Commercial Investigation):
+- "best hair growth supplements for women 2026"
+- "Keraessentials review and results"
+- "natural nail strengthening supplements"
+- "hair loss supplements that actually work"
+- "biotin alternatives for hair growth"
+
+**Dating/Manifestation** (Commercial Investigation):
+- "law of attraction for love and relationships"
+- "manifesting a specific person techniques"
+- "Bottom Line Manifesting review 2026"
+- "dating mindset shift programs"
+- "attract love using manifestation"
+
+**Spirituality/Wealth Manifestation** (Commercial Investigation):
+- "Billionaire Brainwave program review"
+- "wealth manifestation techniques that work"
+- "brainwave entrainment for money"
+- "law of attraction for financial abundance"
+- "manifest money fast techniques"
+
+## Phase 2: Content Architecture for Affiliate Conversion
+
+### Current Website Structure Analysis:
+**Problem**: Single landing page for all services
+**Solution**: Create dedicated niche sections with targeted content
+
+### Page Expansion Plan:
+
+**Tier 1: Niche Landing Pages** (Create first)
+1. `/money-making/` - AI tools & affiliate marketing
+2. `/health-fitness/` - Supplements & wellness
+3. `/dating-relationships/` - Manifestation & dating
+4. `/spirituality-wealth/` - Manifestation & abundance
+5. `/diy-survival/` - Prepper gear & skills
+
+**Tier 2: Product Review Pages**
+1. `/reviews/writelytic/` - Detailed AI tool review
+2. `/reviews/keraessentials/` - Supplement results review
+3. `/reviews/bottom-line-manifesting/` - Dating program review
+4. `/reviews/billionaire-brainwave/` - Wealth program review
+5. `/reviews/bushprovtder/` - Survival gear review
+
+**Tier 3: Comparison Articles** (Builds authority)
+1. "Writelytic vs Jasper vs Copy.ai for Affiliate Marketing"
+2. "Keraessentials vs Viviscal vs Nutrafol for Hair Growth"
+3. "Top 5 Manifestation Programs for Love and Money (2026)"
+4. "Best Survival Gear for Beginners: Complete Starter Kit Guide"
+
+### Content Types by Intent:
+
+**Commercial Investigation Articles**:
+- "Is [Product] Worth It? Honest Review"
+- "[Product] vs [Competitor]: Which is Better?"
+- "How I Made $X Using [Product] - Case Study"
+
+**Buyer's Guides**:
+- "How to Choose the Right [Product Type] for Your Needs"
+- "[Niche] Buying Guide: What Features Matter Most"
+- "Beginner's Guide to [Topic] - What You Need to Know"
+
+## Phase 3: Implementation Timeline
+
+**Week 1-2: Technical Foundation + First Niche Launch**
+- [ ] Create `/money-making/` landing page
+- [ ] Write "Writelytic Review 2026" article
+- [ ] Implement internal linking from homepage
+- [ ] Set up conversion tracking for affiliate links
+
+**Week 3-4: Expand to Health & Dating Niches**
+- [ ] Create `/health-fitness/` landing page
+- [ ] Create `/dating-relationships/` landing page  
+- [ ] Write "Keraessentials Results Review"
+- [ ] Write "Manifesting Love Success Stories"
+
+**Month 2: Complete All Niches + Authority Content**
+- [ ] Create remaining niche landing pages
+- [ ] Write comparison articles for each niche
+- [ ] Build email list with niche-specific lead magnets
+- [ ] Implement schema markup for reviews/products
+
+## Phase 4: Conversion Optimization
+
+**Affiliate Link Strategy**:
+- Place affiliate links in contextually relevant positions
+- Use honest disclosure language ("I earn commissions from qualifying purchases")
+- Test different call-to-action phrasing
+- Create dedicated review pages for each product
+
+**Email List Building**:
+- Create niche-specific lead magnets (cheat sheets, checklists)
+- Implement exit-intent popups for each niche section
+- Set up email sequences for each product category
+
+**Tracking & Analytics**:
+- Track affiliate link clicks by niche/product
+- Monitor conversion rates for each content type
+- A/B test headlines and call-to-actions
+
+## Success Metrics by Niche
+
+**Money Making Niche**:
+- 20+ commercial investigation keywords ranking
+- 5%+ click-through rate to Writelytic
+- $X monthly affiliate revenue
+
+**Health & Fitness Niche**:
+- 15+ supplement-related keywords ranking  
+- 3%+ conversion rate on Keraessentials
+- Build email list of health-conscious audience
+
+**Dating Niche**:
+- 10+ manifestation/dating keywords ranking
+- Establish authority in law of attraction space
+- Cross-sell to spirituality niche
+
+## Immediate Next Actions
+
+1. **Create first niche landing page** (`/money-making/`)
+2. **Write detailed Writelytic review article**
+3. **Implement internal linking structure**
+4. **Set up Google Search Console tracking**
+5. **Create content calendar for all 5 niches**
+
+---
+
+*Last updated: June 9, 2026*  
+*Next review: Begin implementation of money-making niche*
 
 **Premium Coffee Subscription**
 - "best coffee subscription services 2026"

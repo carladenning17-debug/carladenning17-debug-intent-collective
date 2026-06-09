@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /money-making.html
+Sitemap: https://carladenning17-debug.github.io/carladenning17-debug-intent-collective/sitemap.xml
