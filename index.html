@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intent Collective — Authentic Digital Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.7; background: #fafafa; }
+    .container { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+
+    /* Header */
+    header { background: rgba(26, 26, 46, 0.97); backdrop-filter: blur(8px); color: #fff; padding: 18px 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    header .container { display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.5px; }
+    header h1 span { color: #e94560; }
+    nav { display: flex; gap: 6px; }
+    nav a { color: rgba(255,255,255,0.7); text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 0.875rem; font-weight: 500; transition: all 0.2s; }
+    nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+
+    /* Hero */
+    .hero { background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); color: #fff; padding: 140px 0 120px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 20%, rgba(233,69,96,0.08) 0%, transparent 60%), radial-gradient(ellipse at 30% 80%, rgba(15,52,96,0.3) 0%, transparent 50%); pointer-events: none; }
+    .hero .container { position: relative; }
+    .hero-badge { display: inline-block; background: rgba(233,69,96,0.15); color: #e94560; padding: 6px 18px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.3px; text-transform: uppercase; margin-bottom: 24px; border: 1px solid rgba(233,69,96,0.2); }
+    .hero h2 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; letter-spacing: -1.5px; line-height: 1.15; max-width: 780px; margin-left: auto; margin-right: auto; }
+    .hero h2 span { color: #e94560; background: linear-gradient(135deg, #e94560, #ff6b6b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.6); max-width: 580px; margin: 0 auto 36px; line-height: 1.7; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: #e94560; color: #fff; padding: 16px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.25s; border: none; cursor: pointer; }
+    .btn:hover { background: #d63851; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(233,69,96,0.3); }
+    .btn-outline { background: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff; padding: 14px 30px; }
+    .btn-outline:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.4); box-shadow: none; transform: none; }
+    .btn-ghost { background: transparent; color: #1a1a2e; padding: 8px 0; border-radius: 0; }
+    .btn-ghost:hover { background: transparent; transform: none; box-shadow: none; color: #e94560; }
+    .btn-ghost::after { content: '→'; transition: transform 0.2s; }
+    .btn-ghost:hover::after { transform: translateX(4px); }
+
+    /* Sections */
+    section { padding: 100px 0; }
+    section:nth-child(even) { background: #fff; }
+    section h2 { font-size: 2.25rem; font-weight: 800; text-align: center; margin-bottom: 16px; letter-spacing: -1px; color: #1a1a2e; }
+    .section-sub { text-align: center; color: #777; font-size: 1rem; margin-bottom: 56px; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+    /* Services */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 28px; }
+    .card { background: #fff; padding: 40px 32px; border-radius: 12px; text-align: center; border: 1px solid #eee; transition: all 0.3s; }
+    .card:hover { border-color: #e94560; transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.06); }
+    .icon-wrap { width: 56px; height: 56px; margin: 0 auto 20px; background: linear-gradient(135deg, rgba(233,69,96,0.1), rgba(15,52,96,0.1)); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+    .card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; color: #1a1a2e; }
+    .card p { color: #666; font-size: 0.9rem; line-height: 1.7; }
+
+    /* About */
+    .about-wrap { max-width: 700px; margin: 0 auto; text-align: center; }
+    .about-wrap p { color: #555; font-size: 1.05rem; line-height: 1.8; }
+    .about-wrap .sig { margin-top: 28px; font-weight: 600; color: #1a1a2e; font-size: 1rem; }
+    .about-wrap .sig span { color: #e94560; }
+
+    /* Blog */
+    .blog-list { max-width: 700px; margin: 0 auto; }
+    .blog-post { padding: 28px 0; border-bottom: 1px solid #eee; transition: padding 0.2s; }
+    .blog-post:first-child { padding-top: 0; }
+    .blog-post:last-child { border-bottom: none; }
+    .blog-post .tag { display: inline-block; background: rgba(233,69,96,0.08); color: #e94560; padding: 3px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+    .blog-post h3 { font-size: 1.2rem; margin-bottom: 8px; font-weight: 700; }
+    .blog-post h3 a { color: #1a1a2e; text-decoration: none; transition: color 0.2s; }
+    .blog-post h3 a:hover { color: #e94560; }
+    .blog-post .meta { color: #999; font-size: 0.825rem; margin-bottom: 8px; }
+    .blog-post p { color: #555; font-size: 0.9rem; line-height: 1.7; }
+
+    /* Contact */
+    #contact { text-align: center; background: #1a1a2e; color: #fff; }
+    #contact h2 { color: #fff; }
+    #contact .section-sub { color: rgba(255,255,255,0.5); }
+    .contact-card { max-width: 480px; margin: 0 auto; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 40px; }
+    .contact-card p { color: rgba(255,255,255,0.6); margin-bottom: 28px; font-size: 0.95rem; }
+
+    /* Footer */
+    footer { background: #111126; color: rgba(255,255,255,0.4); padding: 28px 0; text-align: center; font-size: 0.825rem; border-top: 1px solid rgba(255,255,255,0.04); }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      header .container { flex-direction: column; gap: 12px; }
+      nav { flex-wrap: wrap; justify-content: center; }
+      nav a { padding: 6px 12px; font-size: 0.8rem; }
+      .hero { padding: 100px 0 80px; }
+      .hero h2 { font-size: 2.2rem; }
+      section { padding: 64px 0; }
+      section h2 { font-size: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Intent <span>Collective</span></h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <span class="hero-badge">Authentic Digital Marketing</span>
+      <h2>Connecting people with <span>valuable solutions</span></h2>
+      <p>We help brands grow, audiences make informed decisions, and creators build sustainable income through marketing that puts people first.</p>
+      <a href="#contact" class="btn">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-sub">What we do to help you grow — ethically, strategically, sustainably.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon-wrap">🔗</div>
+          <h3>Affiliate Marketing</h3>
+          <p>Strategic partnerships that connect audiences with products they'll genuinely love. We handle strategy, placement, and optimization end-to-end.</p>
+        </div>
+        <div class="card">
+          <div class="icon-wrap">✍️</div>
+          <h3>Content Creation</h3>
+          <p>Authentic content that tells your brand's story — from blog posts and video scripts to social campaigns that build real, lasting trust.</p>
+        </div>
+        <div class="card">
+          <div class="icon-wrap">📈</div>
+          <h3>Digital Growth</h3>
+          <p>Data-driven strategies to expand your reach. SEO, paid media, email marketing, and community building — done the sustainable way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p class="section-sub">The story behind Intent Collective.</p>
+      <div class="about-wrap">
+        <p>Intent Collective was founded on a simple belief: successful marketing starts with understanding people. We connect them with solutions that genuinely add value to their lives — through ethical affiliate marketing, intentional content, and smart digital strategy. Every campaign we run is built on authenticity, transparency, and respect for the audience. That's not just our approach. It's our promise.</p>
+        <p class="sig">— <span>Carla</span>, Founder &amp; CEO</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <h2>Blog</h2>
+      <p class="section-sub">Thoughts on marketing, authenticity, and building something that matters.</p>
+      <div class="blog-list">
+        <div class="blog-post">
+          <span class="tag">Strategy</span>
+          <h3><a href="#">Why Authentic Marketing Wins in 2026</a></h3>
+          <div class="meta">June 9, 2026 · 3 min read</div>
+          <p>How brands are moving away from interrupt-driven tactics and toward genuine connection — and why the data backs it up.</p>
+        </div>
+        <div class="blog-post">
+          <span class="tag">Affiliates</span>
+          <h3><a href="#">Affiliate Marketing That Respects the Audience</a></h3>
+          <div class="meta">May 28, 2026 · 4 min read</div>
+          <p>Ethical affiliate strategies that drive conversions without eroding trust. A practical framework for sustainable partnerships.</p>
+        </div>
+        <div class="blog-post">
+          <span class="tag">Culture</span>
+          <h3><a href="#">The Intent Collective Manifesto</a></h3>
+          <div class="meta">May 15, 2026 · 2 min read</div>
+          <p>Why we started Intent Collective, what we believe, and how we measure success beyond the click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Let's work together</h2>
+      <p class="section-sub">Ready to grow? We'd love to hear from you.</p>
+      <div class="contact-card">
+        <p>Tell us about your brand, your goals, and what authentic marketing means to you. Let's build something that matters.</p>
+        <a href="mailto:hello@intentcollective.com" class="btn">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Intent Collective. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
